@@ -90,6 +90,7 @@ module.exports =
       shellArguments:
         type: 'string'
         default: do ({SHELL, HOME}=process.env)->
+          return '' unless SHELL
           switch path.basename SHELL.toLowerCase()
             when 'bash' then "--init-file #{path.join HOME, '.bash_profile'}"
             when 'zsh'  then ""
