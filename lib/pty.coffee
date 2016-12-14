@@ -1,4 +1,5 @@
 # from atom/terminal to reduce cpu usage
+hello emanuellllololol
 
 pty = require 'pty.js'
 
